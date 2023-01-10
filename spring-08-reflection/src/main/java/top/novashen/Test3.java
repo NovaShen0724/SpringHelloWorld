@@ -1,10 +1,11 @@
 package top.novashen;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
+//实验通过反射获得class method field对象和新建对象实例，并学习如何调用方法 字段 构造器
 public class Test3 {
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         User user = new User();
         Class<?> c1 = Class.forName("top.novashen.User");
         Method getName = c1.getDeclaredMethod("getName", null);
@@ -14,6 +15,12 @@ public class Test3 {
         System.out.println(set);
         Object get = getName.invoke(user, null);
         System.out.println(get);
+
+        Field name = c1.getDeclaredField("name");
+        name.setAccessible(true);
+        System.out.println(name.get(user));
+        name.set(user,"HZY");
+        System.out.println(name.get(user));
 
 
     }

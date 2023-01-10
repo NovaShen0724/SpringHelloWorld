@@ -1,5 +1,5 @@
 package top.novashen;
-
+//探寻java类加载器的执行顺序和继承结构
 public class Test2 {
     public static void main(String[] args) {
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();

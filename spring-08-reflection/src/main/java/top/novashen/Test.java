@@ -1,5 +1,5 @@
 package top.novashen;
-
+//理解java虚拟机对于对象的创建的顺序
 public class Test {
     private static Test instance;
     private static Test t2;
