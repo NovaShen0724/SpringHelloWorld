@@ -70,6 +70,6 @@ public class Test4 {
         testNormal();
         testReflection();
         testReflectionWithAccessible();
-
+        //测试性能
     }
 }
