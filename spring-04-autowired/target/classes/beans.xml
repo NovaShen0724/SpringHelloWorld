@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="top.novashen.pojo.Cat"/>
+    <bean id="dog" class="top.novashen.pojo.Dog"/>
+    <bean id="human1" class="top.novashen.pojo.Human">
+        <property name="name" value="SYH"/>
+        <property name="dog" ref="dog"/>
+        <property name="cat" ref="cat"/>
+    </bean>
+<!--    名字要唯一-->
+    <bean id="human2" class="top.novashen.pojo.Human" autowire="byName">
+        <property name="name" value="SYH"/>
+    </bean>
+<!--    类型要唯一-->
+    <bean id="human3" class="top.novashen.pojo.Human" autowire="byType">
+        <property name="name" value="SYH"/>
+    </bean>
+
+</beans>

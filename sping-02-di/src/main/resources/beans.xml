@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--使用Spring配置文件创建对象-->
+    <!--称为bean-->
+    <bean id="address" class="top.novashen.pojo.Address">
+        <property name="address" value="NanNing No.3 High School"/>
+    </bean>
+    <bean id="student" class="top.novashen.pojo.Student">
+        <!--1.普通value注入-->
+        <property name="name" value="SYH"/>
+        <!--2.bean注入 -->
+        <property name="address" ref="address"/>
+        <!--3.数组注入-->
+        <property name="book">
+            <array>
+                <value>Chinese</value>
+                <value>Math</value>
+                <value>English</value>
+                <value>Physiology</value>
+                <value>Chemistry</value>
+                <value>Biology</value>
+            </array>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>C</value>
+                <value>T</value>
+                <value>R</value>
+                <value>L</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="1" value="2"/>
+                <entry key="3" value="4"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>COC</value>
+                <value>BOB</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null/>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="name">SYH</prop>
+                <prop key="age">17</prop>
+                <prop key="wife">NO</prop>
+            </props>
+        </property>
+
+    </bean>
+
+</beans>

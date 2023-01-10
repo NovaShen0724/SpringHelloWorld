@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-01-ioc-1" />
+        <module name="spring-08-reflection" />
+        <module name="spring-anno" />
+        <module name="sping-di" />
+        <module name="spring-helloworld" />
+        <module name="spring-07-proxy" />
+        <module name="spring-autowired" />
+        <module name="spring-06-appconfig" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-01-ioc-1&amp;2" target="17" />
+      <module name="spring-08-proxy2" target="17" />
+      <module name="spring-ioc-1" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
