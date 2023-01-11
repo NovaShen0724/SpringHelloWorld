@@ -1,5 +1,7 @@
 package top.novashen;
 
 public interface Rent {
-    public void rent();
+    void rent();
+
+    void look();
 }

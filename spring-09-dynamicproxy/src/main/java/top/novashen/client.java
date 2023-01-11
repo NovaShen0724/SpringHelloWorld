@@ -9,5 +9,6 @@ public class client {
         p.setRent(host);
         Rent proxy = (Rent) p.getProxy();
         proxy.rent();
+        proxy.look();
     }
 }
