@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-09-dynamicproxy" />
         <module name="spring-01-ioc-1" />
         <module name="spring-08-reflection" />
         <module name="spring-anno" />
